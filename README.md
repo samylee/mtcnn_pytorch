@@ -6,20 +6,17 @@ MTCNN，Multi-task convolutional neural network（多任务卷积神经网络）
 
 ## 二、实现结果（完美复现，不是接近！）
 2.1. 准确率  
-![](results/discROC-compare.png)  
-![](results/contROC-compare.png)  
+<img src="results/discROC-compare.png" width="400"/>   <img src="results/contROC-compare.png" width="400"/>  
 2.2. 速度  
 |mtcnn| hardware | software | image_size | min_size | speed |
 |-----|------|------|-----|----|----|
 |zhang's| i7-9700K|	vs2017-opencv-dnn|640x480|	20|	35ms|
 |samylee| i7-9700K|	vs2017-opencv-dnn|640x480|	20|	32ms|
-
 2.3. 优势  
 2.3.1. 大多数复现mtcnn代码并不能完美复现mtcnn的速度，因为他们pnet网络产生了大量负样本，导致整体算法速度减慢，虽然能获得更大的recall，但摒弃了mtcnn算法设计初衷。  
 2.3.2. 大多数复现mtcnn代码并不能完美复现mtcnn的精度，其ROC曲线并不能重合或稍高。  
 2.3.3. 大多数复现mtcnn代码编写复杂，逻辑冗长，无法一目了然。  
 2.3.4. 提供pytorch转caffe工具和c++实现工程，工程部署不在话下。  
-
 2.4. 效果展示  
 ![](results/12_Group_Group_12_Group_Group_12_249.jpg) 
 ![](results/20_Family_Group_Family_Group_20_294.jpg) 
