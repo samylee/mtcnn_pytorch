@@ -6,7 +6,8 @@ MTCNN，Multi-task convolutional neural network（多任务卷积神经网络）
 
 ## 二、实现结果（完美复现，不是接近！）
 2.1. 准确率  
-
+![](results/discROC-compare.png)  
+![](results/contROC-compare.png)  
 2.2. 速度  
 |mtcnn| hardware | software | image_size | min_size | speed |
 |-----|------|------|-----|----|----|
@@ -20,6 +21,9 @@ MTCNN，Multi-task convolutional neural network（多任务卷积神经网络）
 2.3.4. 提供pytorch转caffe工具和c++实现工程，工程部署不在话下。  
 
 2.4. 效果展示  
+![](results/12_Group_Group_12_Group_Group_12_249.jpg) 
+![](results/20_Family_Group_Family_Group_20_294.jpg) 
+![](results/20_Family_Group_Family_Group_20_1026.jpg) 
 
 ## 三、实现要求
 3.1. 系统及硬件要求  
